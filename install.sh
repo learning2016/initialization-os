@@ -13,3 +13,4 @@ wget https://raw.githubusercontent.com/learning2016/initialization-os/master/ipt
 sh iptables.sh
 systemctl stop firewalld.service
 systemctl disable firewalld.service
+iptables -L -n
