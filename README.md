@@ -1,0 +1,2 @@
+# initialization-os
+centos7
