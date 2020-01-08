@@ -3,6 +3,7 @@
 #date:1.8.2020
 systemctl stop firewalld.service
 systemctl disable firewalld.service
+yum install epel-release -y
 yum -y install iptables-services net-tools
 systemctl enable iptables.service
 yum -y install wget
