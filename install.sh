@@ -9,7 +9,7 @@ yum -y install wget
 yum -y install vim
 mkdir /script
 cd /script
-wget https://raw.githubusercontent.com/learning2016/initialization-os/master/iptables.sh?token=AEMZOTCMRVX5YH6GVWSTSZK6CVIWI
+wget https://raw.githubusercontent.com/learning2016/initialization-os/master/install.sh
 sh iptables.sh
 systemctl stop firewalld.service
 systemctl disable firewalld.service
