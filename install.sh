@@ -10,7 +10,7 @@ yum -y install vim
 mkdir /script
 cd /script
 wget https://raw.githubusercontent.com/learning2016/initialization-os/master/iptables.sh
-sh iptables.sh
+sh /script/iptables.sh
 systemctl stop firewalld.service
 systemctl disable firewalld.service
 setenforce 0
