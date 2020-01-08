@@ -14,6 +14,6 @@ sh /script/iptables.sh
 systemctl stop firewalld.service
 systemctl disable firewalld.service
 setenforce 0
-sed -i 's/enforcing/disabled/g' /etc/selinux/configure
+sed -i 's/enforcing/disabled/g' /etc/selinux/config
 getenforce
 iptables -L -n
