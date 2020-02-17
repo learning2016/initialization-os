@@ -11,6 +11,7 @@ iptables -P FORWARD ACCEPT
 iptables -A INPUT -p icmp -j ACCEPT
 iptables -A INPUT -i lo -j ACCEPT
 iptables -A INPUT -s 192.168.1.0/24 -j ACCEPT
+iptables -A INPUT -s 38.123.105.112/28 -j ACCEPT
 iptables -A INPUT -p tcp -m multiport --dports 443,80,8081 -j ACCEPT
 iptables -A INPUT -s 164.52.50.78/32 -j ACCEPT
 iptables -A INPUT -s 101.251.236.14/32 -j ACCEPT
